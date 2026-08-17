@@ -7,7 +7,7 @@ This repository contains the MATLAB scripts used to analyze US voucher awards, p
 The scripts rely on the following datasets. Please ensure the publicly available CSV files are placed in the same directory as the scripts before running them.
 
 * **`voucher-awards-prices.csv`**
-  Contains historical data on voucher awards and their associated prices. This dataset is required to run `us_voucher_award_and_price.m` and generate **Figure 1**.
+  Contains historical data on voucher awards and their associated prices. This dataset is required to run `voucher_awards_prices_precise_dates.m` and generate **Figure 1**.
 
 * **`24_sales_data.csv`**
   Contains public sales data for 2024 extracted directly from the respective firms' financial filings. 
@@ -20,17 +20,17 @@ The scripts rely on the following datasets. Please ensure the publicly available
 
 The analysis is divided into the following primary scripts:
 
-* **`us_voucher_award_and_price.m`**
+* **`voucher_awards_prices_precise_dates.m`**
   Replicates **Figure 1**. It processes and visualizes the number of vouchers awarded each year alongside their average price.
 
 * **`us_voucher_val.m`**
-  The main valuation script. It projects future sales and computes the voucher values. Running this script generates the data for **Figures 2 and A1**, as well as **Tables 1, 2, and A3**.
+  The main valuation script. It projects future sales and computes the voucher values. Running this script generates the data for **Figures 2, 3, S1, and S3**, as well as **Tables S1, S2, and S5**.
 
 * **`us_voucher_val_fn_sales.m`**
   Computes the voucher value specifically as a function of annual peak sales.
 
 * **`robustness_check.m`**
-  Conducts the necessary robustness checks for the valuation model and generates the tornado chart shown in **Figure 3**.
+  Conducts the necessary robustness checks for the valuation model and generates the tornado chart shown in **Figure S2**.
 
 ## 🛠️ Helper Functions
 
